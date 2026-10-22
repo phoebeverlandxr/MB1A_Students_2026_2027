@@ -1,0 +1,15 @@
+---
+title: "Analysis_In_Quarto"
+author: "Phoebe Verlander"
+---
+ Using the sum function in HPA 
+```{r}
+genes_human <- sum(180, 83, 57, 110)
+genes_pig <- sum(109, 157, 31, 45)
+genes_mouse <- sum(55, 185, 60, 98)
+
+print(genes_human)
+print(genes_mouse)
+print(genes_pig)
+```
+Humans have the highest number of genes with regionally elevated expression. 

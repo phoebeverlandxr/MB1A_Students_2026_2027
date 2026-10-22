@@ -1,0 +1,35 @@
+---
+title: "Part3_Prac1"
+---
+
+```{r}
+round(3.14159)
+round(3.14159, digits = 2)
+print(rep(5,7))
+print(rep(x=5, times = 7))
+```
+```{r}
+x <- "Wassup"
+y <- 7
+z <- TRUE
+
+print(x)
+print(y)
+print(z)
+
+print(class(x))
+print(class(y))
+print(class(z))
+```
+cell_id1 <- "CX1"
+cell_id2 <- "CX2"
+
+cell_id1Treated <- TRUE
+cell_id2Treated <- FALSE
+
+cell_id1Before <- 5415
+cell_id2Before <- 8123
+
+cell_id1After <- 1423
+cell_idAfter <- 7543
+
