@@ -1,0 +1,28 @@
+---
+title: "Practical_1_Introduction_to_R/ukhsa_data_analysis.qnd"
+author: "Phoebe Verlander"
+---
+
+```{r}
+library(tidyverse)
+library(gt)
+```
+ran the table 
+```{r}
+lead <- read_csv("data/ukhsa-chart-download.csv")
+gt(head(lead))
+```
+
+
+```{r}
+ggplot(lead, aes(
+  x = year,
+  y = metric_value
+)) + 
+  geom_line(colour = "pink") +
+  xlab("Year") +
+  ylab("Number of Cases") +
+  ggtitle("Cases by Year of Lead Poisoning")
+ 
+```
+

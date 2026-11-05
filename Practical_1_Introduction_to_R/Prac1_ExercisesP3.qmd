@@ -5,8 +5,8 @@ title: "Part3_Prac1"
 ```{r}
 round(3.14159)
 round(3.14159, digits = 2)
-print(rep(5,7))
-print(rep(x=5, times = 7))
+print(rep(5, 7))
+print(rep(x = 5, times = 7))
 ```
 ```{r}
 x <- "Wassup"
@@ -20,7 +20,7 @@ print(z)
 print(class(x))
 print(class(y))
 print(class(z))
-```
+
 cell_id1 <- "CX1"
 cell_id2 <- "CX2"
 
@@ -32,4 +32,60 @@ cell_id2Before <- 8123
 
 cell_id1After <- 1423
 cell_idAfter <- 7543
+
+cell_id <- c(cell_id1, cell_id2)
+Treated <- c(cell_id1Treated, cell_id2Treated)
+Before <- c(cell_id1Before, cell_id2Before)
+After <- c(cell_id1After, cell_idAfter)
+```
+
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+var4 <- all_my_pets[4]
+print(var4)
+```
+
+```{r}
+
+library(tidyverse)
+library(gt)
+
+RadiationData <- tibble(
+  cell_ID = cell_id,
+  treated = Treated,
+  num_cells_before = Before,
+  num_cells_after = After
+)
+
+gt(RadiationData)
+```
+
+```{r}
+cell_id1 <- "CX1"
+cell_id2 <- "CX2"
+
+cell_id1Treated <- TRUE
+cell_id2Treated <- FALSE
+
+cell_id1Before <- 5415
+cell_id2Before <- 8123
+
+cell_id1After <- 1423
+cell_idAfter <- 7543
+
+cell_id <- c(cell_id1, cell_id2)
+Treated <- c(cell_id1Treated, cell_id2Treated)
+Before <- c(cell_id1Before, cell_id2Before)
+After <- c(cell_id1After, cell_idAfter)
+```
+```{r}
+RadiationData <- tibble(
+  cell_ID = cell_id,
+  treated = Treated,
+  num_cells_before = Before,
+  num_cells_after = After
+)
+
+gt(RadiationData)
+```
 
